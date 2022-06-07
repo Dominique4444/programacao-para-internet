@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+  <head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Lista Telefônica</title>
+    <link href = "styles.css" rel = "stylesheet"/>
+  </head>
+  <body>
+    <div class = "app">
+      <div class = "content-form">
+        <form id = "app-form">
+          <div class = "input-group">
+            <input id = "contatoNome" placeholder = "Nome: "/>
+            <input id = "contatoSobrenome" placeholder = "Sobrenome: "/>
+          </div>
+
+          <div class = "input-group">
+            <input type = "number" id = "contatoTelefone" placeholder = "Número do Telefone (com DDD): " />
+            <button class = "btn-app" id = "btnCadastrar" type = "submit">Cadastrar</button>
+            <button class = "btn-app" id = "btnEditar" type = "button" style = "display: none;">Editar</button>
+          </div>
+        </form>
+      </div>		
+      <div class = "content-actions">
+        <div class = "content-actions-buttons">
+          <button class = "btn-app" id = "btnExemplo">Gerar Lista</button>
+          <button class = "btn-app" id = "btnOrdenar">Ordenar</button>
+        </div>
+      </div>
+      <div class = "content-list">
+        <div class = "content-list-container">
+          <ul id = "listaContatos"></ul>
+        </div>
+      </div>
+    </div>
+    <script src = "site.js"></script>
+  </body>
+</html>
